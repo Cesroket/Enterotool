@@ -5,7 +5,7 @@ Raw sequencing reads were processed and quality-trimmed using Trimmomatic (v0.39
 
 The workflow was designed for rapid and efficient processing of sequencing data, ensuring robust and specific identification of EV genogroups. All analyses were performed on a Linux-based system (Ubuntu 22.04.5 LTS) to optimize computational performance and reproducibility.
 
-![IMG_0295](https://github.com/user-attachments/assets/9dd79bbc-d6d1-42b8-959a-6df95a131d6e)
+![IMG_0295](https://github.com/user-attachments/assets/92f8d4fc-2a93-4768-9e8b-78b6c6fb5dbf)
 
 # References
 NCBI Virus repository: https://www.ncbi.nlm.nih.gov/labs/virus/vssi/#/
