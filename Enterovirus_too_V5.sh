@@ -50,8 +50,9 @@ awk '{contador[$2]++} END {for (linea in contador) print linea "\t" contador[lin
 
 #normalization rnorm
 
-
+echo -e "Genus\tSpecie\tCount\tCPM" > headers.tsv
 cat headers.tsv "$Edition_output" > "$output"
+rm headers.tsv
 
 echo "Final results save in "$output""
 
