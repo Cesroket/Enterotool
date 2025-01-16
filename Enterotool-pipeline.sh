@@ -4,6 +4,7 @@
 stamp="$1"
 Fastq_input1="$2"
 Fastq_input2="$3"
+database="$4"
 parent_dir="./Enterotool-${stamp}" 
 rawdata_dir="${parent_dir}/00.Rawdata"
 stats_dir="${parent_dir}/01.stats"
@@ -52,7 +53,7 @@ vsearch --uchime_denovo "${results_dir}/input.fasta" \
         --chimeras "${results_dir}/output_chimeras.fasta"
 
 # BLAST 
-blastn -query "${results_dir}/output_nonchimeras.fasta" -db Database/Enterovirus_data_clean \
+blastn -query "${results_dir}/output_nonchimeras.fasta" -db $database \
        -out "$Blast_output" -qcov_hsp_perc 97 -max_target_seqs 1 -outfmt 6 -perc_identity 97
 
 # parse blast output
