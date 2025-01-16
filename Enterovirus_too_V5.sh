@@ -24,8 +24,6 @@ trimmomatic PE -threads 4 $Fastq_input1 $Fastq_input2 \
                ILLUMINACLIP:adapters.fa:2:30:10 \
                LEADING:20 TRAILING:20 SLIDINGWINDOW:4:20 MINLEN:40
 
-#Sapdes, ni idea si utilizare spades al final o no. 
-#spades -1 ${stamp}_cleaned_paired_1.fastq -2 ${stamp}_cleaned_paired_2.fastq -o ./${output_dir}/spades.output
 
 #Chimeras out
 vsearch --fastq_filter input.fastq --fastaout input.fasta
