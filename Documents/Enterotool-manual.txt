@@ -1,3 +1,56 @@
-This would be the enterotool manual. The one that should open when yo type --h.
+Enterotool: A script to process sequencing data for enterovirus analysis.
+========================================================
 
-Usage: (explain)
+This script performs the following steps:
+1. Trimming and cleaning of raw sequencing reads (FASTQ files).
+2. Merging paired-end reads.
+3. Filtering and removing chimeric reads.
+4. BLAST analysis against a specified database.
+5. Normalization of abundance data to Counts Per Million (CPM).
+6. Visualization of genus-level relative abundances as a bar graph.
+
+Usage:
+------
+./enterotool.sh <sample_name> <input_R1.fastq> <input_R2.fastq> <blast_database>
+
+Arguments:
+----------
+<sample_name>         Name of the sample being processed. Used to name output files and directories.
+<input_R1.fastq>      Path to the raw FASTQ file for the forward reads (R1).
+<input_R2.fastq>      Path to the raw FASTQ file for the reverse reads (R2).
+<blast_database>      Path to the BLAST database (e.g., Enterovirus database in FASTA format).
+
+Output:
+-------
+The script generates the following Directory Structure:
+
+Enterotool-<sample_name>/
+├── 00.Rawdata/          # Contains the original FASTQ files
+├── 01.stats/            # Contains statistics before and after trimming
+├── 02.results/          # Contains final results, including normalized abundance table and graph
+
+Dependencies:
+-------------
+1. Conda environment with the following installed:
+   - seqkit
+   - trimmomatic
+   - vsearch
+   - blast
+   - python3 (with pandas and matplotlib libraries)
+2. A BLAST database prepared using 'makeblastdb'.
+
+Example:
+--------
+./enterotool.sh Sample1 /path/to/sample_R1.fastq /path/to/sample_R2.fastq /path/to/database.fasta
+
+This will create the output directory 'Enterotool-Sample1' containing the processed results.
+
+Notes:
+------
+- Ensure the database is formatted using 'makeblastdb' before running the script.
+- Use the provided installer script to set up the required dependencies, or just make sure you have all of them install corectly. 
+- The script automatically normalizes the abundance data to CPM and generates a genus-level bar chart, but you can choose to use it or not. 
+
+# Developed by: Cesroket, César Adrián Barbuzana Armas.
+# Organization: LABAQUA S.A.U.
+# Copyright (C) 2025 LABAQUA S.A.U.
