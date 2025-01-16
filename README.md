@@ -1,12 +1,21 @@
 # Enterotool
 
+This pipeline employs Seqkit for initial quality control (QC1) to ensure the integrity of the input data. Following this, the reads are processed using Trimmomatic to perform quality trimming, removing low-quality bases and sequences that do not meet the minimum read length or quality score thresholds. The trimmed reads undergo a second quality control step (QC2) to validate the effectiveness of the trimming process. The forward and reverse reads are then merged using Vsearch, followed by identifying and removing potential chimeric sequences via a de novo approach. The processed reads are aligned against a curated database using Blastn, employing stringent thresholds (e.g., 98% nucleotide identity) to ensure accurate genogroup identification. An in-house bash script parses the BLAST results, counting unique and valid matches for each genogroup. The resulting data is normalized to Counts Per Million (CPM) for sample consistency. Finally, the normalized data is visualized using Matplotlib, producing a genus-level stacked bar chart that highlights the relative abundances of identified genogroups. The process concludes with the generation of a comprehensive report summarizing the findings, ensuring reproducibility and interpretability of the results.
+
+The workflow was designed for rapid and efficient sequencing data processing, ensuring specific identification of EV genogroups. All analyses were performed on a Linux-based system (Ubuntu 22.04.5 LTS) to optimize computational performance and reproducibility.
+
+![Sin título](https://github.com/user-attachments/assets/5094931f-be2f-4f83-aaf9-fca1707bd68f)
+
+# Dependencies 
+The following tools and libraries are required to run the pipeline:
+Bash.
+Trimmomatic (v0.39).
+Seqkit.
+Vsearch (v2.29.1).
+Blastn (NCBI BLAST+).
+pandas.
+matplotlib.
 This database was obtained from the NCBI Virus repository (https://www.ncbi.nlm.nih.gov/labs/virus/vssi/#/), and manually curated.
-
-Raw sequencing reads were processed and quality-trimmed using Trimmomatic (v0.39), applying a minimum read length threshold of 80 base pairs and ensuring a minimum Phred quality score of Q30 (Bolger et al., 2014). Chimera assessment was performed using vsearch (2.29.1), excluding potential chimeric sequences via --uchime_denovo (Rognes et al., 2016). Genogroup identification and annotation were dependent on the 5'UTR region. Blastn (Altschul et al., 1990) was employed to align reads against the 5'UTR-based curated database with a threshold of 98% nucleotide sequence identity to ensure high-confidence matches. An in-house bash script was developed for automated quantification of genogroup abundance, parsing Blastn output files to count valid matches identified per sample. Unique matches, where a read aligned to a single genogroup without ambiguity and met the identity criterion, were included in the analysis. Data normalization to counts per million (CPM) was performed using bash.
-
-The workflow was designed for rapid and efficient processing of sequencing data, ensuring specific identification of EV genogroups. All analyses were performed on a Linux-based system (Ubuntu 22.04.5 LTS) to optimize computational performance and reproducibility.
-
-![IMG_0295](https://github.com/user-attachments/assets/92f8d4fc-2a93-4768-9e8b-78b6c6fb5dbf)
 
 # References
 
@@ -15,4 +24,4 @@ Seqkit: Wei Shen et al., 2024.
 Trimmomatic: Bolger et al., 2014.
 vsearch: Rognes et al., 2016.
 Blastn: Altschul et al., 1990.
-Matplotlib: ...
+Matplotlib: J. D. Hunter, "Matplotlib: A 2D Graphics Environment", Computing in Science & Engineering, vol. 9, no. 3, pp. 90-95, 2007.

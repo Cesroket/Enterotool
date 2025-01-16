@@ -7,7 +7,7 @@ This script performs the following steps:
 3. Filtering and removing chimeric reads.
 4. BLAST analysis against a specified database.
 5. Normalization of abundance data to Counts Per Million (CPM).
-6. Visualization of genus-level relative abundances as a bar graph.
+6. Visualization of genogroups relative abundances as a bar graph.
 
 Usage:
 ------
@@ -37,7 +37,8 @@ Dependencies:
    - vsearch
    - blast
    - python3 (with pandas and matplotlib libraries)
-2. A BLAST database prepared using 'makeblastdb'.
+
+2. A BLAST database was prepared using 'makeblastdb'.
 
 Example:
 --------
