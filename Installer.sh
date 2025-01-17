@@ -5,6 +5,7 @@ echo "Enterotool conda Environment Setup:"
 echo "Hi, this is the installer, If you proceed, it will create a conda enviorment with all the required packages!!"
 echo "If you have all the depencies requiered, you dont need to run this script."
 echo "Make sure you have the following tools installed: seqkit, trimmomatic, vsearch, blastn, matplotlib, pandas"
+echo "if not, just run this script and it will install all the required packages."
 echo "Do you want to proceed? (y/n)"
 
 read -r response 
