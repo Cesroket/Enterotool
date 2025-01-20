@@ -1,6 +1,8 @@
 # Enterotool
 
-This pipeline employs Seqkit for initial quality control (QC1) to ensure the integrity of the input data. Following this, the reads are processed using Trimmomatic to perform quality trimming, removing low-quality bases and sequences that do not meet the minimum read length or quality score thresholds. The trimmed reads undergo a second quality control step (QC2) to validate the effectiveness of the trimming process. The forward and reverse reads are then merged using Vsearch, followed by identifying and removing potential chimeric sequences via a de novo approach. The processed reads are aligned against a curated database using Blastn, employing stringent thresholds (e.g., 98% nucleotide identity, by default) to ensure accurate genogroup identification. An in-house bash script parses the BLAST results, counting unique and valid matches for each genogroup. The resulting data is normalized to Counts Per Million (CPM) for sample consistency. Finally, the normalized data is visualized using Matplotlib, producing a genogroups stacked bar chart that highlights the relative abundances of identified genogroups.
+Enterotool is a fast bioinformatics pipeline for processing and analyzing sequencing data to identify and quantify Enterovirus genogroups.
+
+This pipeline employs Seqkit for initial quality control (QC1) to ensure the integrity of the input data. Following this, the reads are processed using Trimmomatic to perform quality trimming, removing low-quality bases and sequences that do not meet the minimum read length or quality score thresholds. The trimmed reads undergo a second quality control step (QC2) to validate the effectiveness of the trimming process. The forward and reverse reads are merged using Vsearch, and potential chimeric sequences are identified and removed via a de novo approach. The processed reads are aligned against a curated database using Blastn, employing stringent thresholds (e.g., 98% nucleotide identity, by default) to ensure accurate genogroup identification. An in-house bash script parses the BLAST results, counting unique and valid matches for each genogroup. The resulting data is normalized to Counts Per Million (CPM) for sample consistency. Finally, the normalized data is visualized using Matplotlib, producing a genogroups stacked bar chart that highlights the relative abundances of identified genogroups.
 
 This workflow was designed for rapid and efficient sequencing data processing, ensuring specific identification of EV genogroups. All analyses were performed on a Linux-based system (Ubuntu 22.04.5 LTS) to optimize computational performance and reproducibility.
 
@@ -10,12 +12,19 @@ This workflow was designed for rapid and efficient sequencing data processing, e
 
 The following tools and libraries are required to run the pipeline:
 Bash.
-Trimmomatic (v0.39).
-Seqkit seqkit (v0.10.0)
-Vsearch (v2.29.1).
-Blastn (NCBI BLAST+).
-pandas.
-matplotlib.
+
+Trimmomatic v0.39
+
+Seqkit v2.9.0
+
+Vsearch v2.29.1
+
+Blastn v2.14.1
+
+pandas v2.2.3
+
+matplotlib v3.9.3
+
 This database was obtained from the NCBI Virus repository (https://www.ncbi.nlm.nih.gov/labs/virus/vssi/#/), and manually curated.
 
 # References
