@@ -52,5 +52,5 @@ Notes:
 - The script automatically normalizes the abundance data to CPM and generates a genus-level bar chart, but you can choose to use it or not. 
 
 # Developed by: Cesroket, César Adrián Barbuzana Armas.
-# Organization: LABAQUA S.A.U.
+# Organization: LABAQUA S.A.U, Alicante, Spain. 
 # Copyright (C) 2025 LABAQUA S.A.U.
