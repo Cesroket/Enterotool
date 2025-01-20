@@ -11,7 +11,7 @@ This workflow was designed for rapid and efficient sequencing data processing, e
 The following tools and libraries are required to run the pipeline:
 Bash.
 Trimmomatic (v0.39).
-Seqkit.
+Seqkit seqkit (v0.10.0)
 Vsearch (v2.29.1).
 Blastn (NCBI BLAST+).
 pandas.
@@ -22,17 +22,17 @@ This database was obtained from the NCBI Virus repository (https://www.ncbi.nlm.
 
 NCBI Virus repository: https://www.ncbi.nlm.nih.gov/labs/virus/vssi/#/
 
-Seqkit
+Seqkit:
 Wei Shen\*, Botond Sipos, and Liuyang Zhao. 2024. SeqKit2: A Swiss Army Knife for Sequence and Alignment Processing. iMeta e191. doi:10.1002/imt2.191.
 
-Trimmomatic
+Trimmomatic:
 Bolger, A. M., Lohse, M., & Usadel, B. (2014). Trimmomatic: a flexible trimmer for Illumina sequence data. Bioinformatics (Oxford, England), 30(15), 2114–2120. https://doi.org/10.1093/bioinformatics/btu170
 
-vsearch
+vsearch:
 Rognes, T., Flouri, T., Nichols, B., Quince, C. & Mahé, F. (2016) 'VSEARCH: a versatile open source tool for metagenomics', PeerJ, 4, e2584. doi:10.7717/peerj.2584.
 
-Blastn
+Blastn:
 Altschul, S. F., Gish, W., Miller, W., Myers, E. W., & Lipman, D. J. (1990). Basic local alignment search tool. Journal of Molecular Biology, 215(3), 403–410. https://doi.org/10.1016/S0022-2836(05)80360-2.
 
-Matplotlib
+Matplotlib:
 J. D. Hunter, "Matplotlib: A 2D Graphics Environment", Computing in Science & Engineering, vol. 9, no. 3, pp. 90-95, 2007.
