@@ -14,6 +14,7 @@ if [[ ! "$response" =~ ^([yY][eE][sS]|[yY])$ ]]; then
     exit 0
 fi
 
+#in case you don like the name a came up wt.
 ENV_NAME="enterotool"
 
 if ! command -v conda &> /dev/null; then
