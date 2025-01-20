@@ -39,4 +39,4 @@ J. D. Hunter, "Matplotlib: A 2D Graphics Environment", Computing in Science & En
 
 # Licenses
 
-This project is licensed under the Creative Commons Attribution-NoDerivatives 4.0 International License.
+This project is licensed under the GNU General Public License v3.0 (GPL-3.0).
