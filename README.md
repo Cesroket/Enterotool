@@ -36,3 +36,7 @@ Altschul, S. F., Gish, W., Miller, W., Myers, E. W., & Lipman, D. J. (1990). Bas
 
 Matplotlib:
 J. D. Hunter, "Matplotlib: A 2D Graphics Environment", Computing in Science & Engineering, vol. 9, no. 3, pp. 90-95, 2007.
+
+# Licenses
+
+This project is licensed under the Creative Commons Attribution-NoDerivatives 4.0 International License.
