@@ -1,12 +1,19 @@
-Creative Commons Attribution-NoDerivatives 4.0 International License
+GNU GENERAL PUBLIC LICENSE
+Version 3, 29 June 2007
 
-This work is licensed under the Creative Commons Attribution-NoDerivatives 4.0 International License.
-To view a copy of this license, visit https://creativecommons.org/licenses/by-nd/4.0/.
+This program is free software: you can redistribute it and/or modify it
+under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+To view a copy of this license, visit https://www.gnu.org/licenses/gpl-3.0.en.html.
 
 Attribution: You must give appropriate credit, provide a link to the license, and indicate if changes were made.
-Preferred citation format: "César A. Barbuzzana-Armas,Labaqua SAU, Project Observe, 2024."
+Preferred citation format: "César A. Barbuzzana-Armas, Labaqua SAU, Project Observe, 2024."
 
-Modification Policy: Modifications, adaptations, and derivative works of this project are not permitted without explicit written consent from the original author. Please contact aegen@labaqua.com for inquiries regarding modifications.
+Modification Policy: Any modifications, adaptations, or derivative works of this project must be distributed
+under the same GNU General Public License terms. Explicit written consent is required to distribute proprietary modifications.
+Please contact aegen@labaqua.com for inquiries regarding modifications.
 
 Disclaimer: This software is provided "as is," without warranty of any kind, express or implied,
 including but not limited to the warranties of merchantability, fitness for a particular purpose,
@@ -14,3 +21,5 @@ and noninfringement. In no event shall the authors or copyright holders be liabl
 damages, or other liability arising from the use of this software.
 
 For permissions or inquiries, contact: aegen@labaqua.com
+
+Copyright (C) 2024, Labaqua SAU.
