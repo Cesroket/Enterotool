@@ -21,8 +21,18 @@ This database was obtained from the NCBI Virus repository (https://www.ncbi.nlm.
 # References
 
 NCBI Virus repository: https://www.ncbi.nlm.nih.gov/labs/virus/vssi/#/
-Seqkit: Wei Shen et al., 2024.
-Trimmomatic: Bolger et al., 2014.
-vsearch: Rognes et al., 2016.
-Blastn: Altschul et al., 1990.
-Matplotlib: J. D. Hunter, "Matplotlib: A 2D Graphics Environment", Computing in Science & Engineering, vol. 9, no. 3, pp. 90-95, 2007.
+
+Seqkit
+Wei Shen\*, Botond Sipos, and Liuyang Zhao. 2024. SeqKit2: A Swiss Army Knife for Sequence and Alignment Processing. iMeta e191. doi:10.1002/imt2.191.
+
+Trimmomatic
+Bolger, A. M., Lohse, M., & Usadel, B. (2014). Trimmomatic: a flexible trimmer for Illumina sequence data. Bioinformatics (Oxford, England), 30(15), 2114–2120. https://doi.org/10.1093/bioinformatics/btu170
+
+vsearch
+Rognes, T., Flouri, T., Nichols, B., Quince, C. & Mahé, F. (2016) 'VSEARCH: a versatile open source tool for metagenomics', PeerJ, 4, e2584. doi:10.7717/peerj.2584.
+
+Blastn
+Altschul, S. F., Gish, W., Miller, W., Myers, E. W., & Lipman, D. J. (1990). Basic local alignment search tool. Journal of Molecular Biology, 215(3), 403–410. https://doi.org/10.1016/S0022-2836(05)80360-2.
+
+Matplotlib
+J. D. Hunter, "Matplotlib: A 2D Graphics Environment", Computing in Science & Engineering, vol. 9, no. 3, pp. 90-95, 2007.
