@@ -25,7 +25,8 @@ bash Enterotool-pipeline.sh <Sample-tag> <fastq_R1.fastq> <fastq_R2.fastq>
 # Dependencies
 
 The following tools and libraries are required to run the pipeline:
-Bash.
+
+Bash
 
 Trimmomatic v0.39
 
