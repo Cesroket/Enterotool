@@ -33,8 +33,6 @@ dos2unix Enterotool-pipeline.sh
 
 The following tools and libraries are required to run the pipeline:
 
-Bash
-
 Trimmomatic v0.39
 
 Seqkit v2.9.0
