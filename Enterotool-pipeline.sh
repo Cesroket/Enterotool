@@ -72,7 +72,7 @@ awk -v total="$total_count" 'BEGIN {FS=OFS="\t"}
     }' "$Edition_output" > "$output"
 
 
-#i think this is the best option, or at least, the essiest one .
+#i think this is the best option, or at least, the essiest one.
 python3 - <<EOF
 import pandas as pd
 import matplotlib.pyplot as plt
@@ -94,7 +94,7 @@ plt.tight_layout()
 plt.savefig(output_file_name)
 EOF
 
-#cleaning, in v2 i will clear this, but not now
+#cleaning, in v2 i will clear this.
 mv ${stamp}_*_*paired_*.fastq  ${parent_dir}/00.Rawdata/
 
 echo "Pipeline finished. Results saved to $results_dir"
