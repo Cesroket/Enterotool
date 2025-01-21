@@ -10,7 +10,7 @@ This workflow was designed for rapid and efficient sequencing data processing, e
 
 # Usage
 
-bash Enterotool-pipeline.sh <fastq_R1.fastq> <fastq_R2.fastq>
+bash Enterotool-pipeline.sh <Sample-tag> <fastq_R1.fastq> <fastq_R2.fastq>
 
 - Ensure all dependencies are installed and available. If you are using Conda, simply run the provided installer for an easier setup.
 
