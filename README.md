@@ -8,6 +8,15 @@ This workflow was designed for rapid and efficient sequencing data processing, e
 
 ![Sin título](https://github.com/user-attachments/assets/5094931f-be2f-4f83-aaf9-fca1707bd68f)
 
+# Installing
+
+To install all necessary dependencies and set up the environment, simply run the following command. It will guide you through the process:
+
+```bash
+chmod +x Installer.sh # Grant executable permissions
+bash Installer.sh
+```
+
 # Usage
 
 ```bash
