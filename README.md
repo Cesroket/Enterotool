@@ -10,6 +10,18 @@ This workflow was designed for rapid and efficient sequencing data processing, e
 
 # Usage
 
+bash Enterotool-pipeline.sh <Sample-tag> <fastq_R1.fastq> <fastq_R2.fastq>
+
+- Ensure all dependencies are installed and available. If you are using Conda, simply run the provided installer for an easier setup.
+
+- Verify that the database is located in the correct directory or update the database path in line 48 of the Enterotool-pipeline.sh script <-db Database/Enterovirus_data_clean>.
+
+- You can use this pipeline with any other databases; for any other target, however, keep in mind that the specificity of the analysis depends on the specificity of the database used.
+
+- If you encounter errors related to script execution (e.g., "command not found" or "bad interpreter"), run:
+
+  dos2unix Enterotool-pipeline.sh
+
 # Dependencies
 
 The following tools and libraries are required to run the pipeline:
