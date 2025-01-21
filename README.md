@@ -2,11 +2,13 @@
 
 Enterotool is a fast bioinformatics pipeline for processing and analyzing sequencing data to identify and quantify Enterovirus genogroups.
 
-This pipeline employs Seqkit for initial quality control (QC1) to ensure the integrity of the input data. Following this, the reads are processed using Trimmomatic to perform quality trimming, removing low-quality bases and sequences that do not meet the minimum read length or quality score thresholds. The trimmed reads undergo a second quality control step (QC2) to validate the effectiveness of the trimming process. The forward and reverse reads are merged using Vsearch, and potential chimeric sequences are identified and removed via a de novo approach. The processed reads are aligned against a curated database using Blastn, employing stringent thresholds (e.g., 98% nucleotide identity, by default) to ensure accurate genogroup identification. An in-house bash script parses the BLAST results, counting unique and valid matches for each genogroup. The resulting data is normalized to Counts Per Million (CPM) for sample consistency. Finally, the normalized data is visualized using Matplotlib, producing a genogroups stacked bar chart that highlights the relative abundances of identified genogroups.
+This pipeline uses Seqkit for initial quality control (QC1) to check input data integrity. Trimmomatic then trims low-quality bases and short sequences. A second quality control step (QC2) validates the trimming. Vsearch merges forward and reverse reads, and removes chimeric sequences. The reads are aligned to a curated database using Blastn with strict thresholds (e.g., 98% nucleotide identity, default). An in-house bash script parses BLAST results, counts unique matches for each genogroup, and normalizes the data to Counts Per Million (CPM). Finally, Matplotlib visualizes the normalized data as a genogroups stacked bar chart, showing the relative abundances of identified genogroups.
 
 This workflow was designed for rapid and efficient sequencing data processing, ensuring specific identification of EV genogroups. All analyses were performed on a Linux-based system (Ubuntu 22.04.5 LTS) to optimize computational performance and reproducibility.
 
 ![Sin título](https://github.com/user-attachments/assets/5094931f-be2f-4f83-aaf9-fca1707bd68f)
+
+# Usage
 
 # Dependencies
 

@@ -45,7 +45,7 @@ vsearch --uchime_denovo "${results_dir}/input.fasta" \
         --chimeras "${results_dir}/output_chimeras.fasta"
 
 # BLAST 
-blastn -query "${results_dir}/output_nonchimeras.fasta" -db Database/Enterovirus_data_clean -out "$Blast_output" -qcov_hsp_perc 97 -max_target_seqs 1 -outfmt 6 -perc_identity 97
+blastn -query "${results_dir}/output_nonchimeras.fasta" -db Database/Enterovirus_data_clean -out "$Blast_output" -qcov_hsp_perc 98 -max_target_seqs 1 -outfmt 6 -perc_identity 98
 
 # parse blast output
 awk '{counter[$2]++} END {for (line in counter) print line "\t" counter[line]}' "$Blast_output" | sed -e s'/|/\t/'g > "$Edition_output"
@@ -54,7 +54,7 @@ awk '{counter[$2]++} END {for (line in counter) print line "\t" counter[line]}' 
 #headers-not working, i will fix this in v2
 sed -i '1i Genogroups\tSerogroups*\tCount' "$Edition_output"
 
-# Normalize via bash, rnanorm, was not available
+# Normalize via bash, rnanorm, was not available. 
 total_count=$(awk 'NR > 1 {sum += $3} END {print sum}' "$Edition_output")
 
 if [[ $total_count -eq 0 ]]; then
