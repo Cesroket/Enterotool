@@ -21,7 +21,7 @@ bash Installer.sh
 
 ```bash
 # Run the pipeline
-bash Enterotool-pipeline.sh <Sample-code> <input-fastq_forward-R1.fastq> <input-fastq_forward-R2.fastq>
+bash Enterotool-pipeline.sh <Sample-code> <input-fastq_forward-R1.fastq> <input-fastq_reverse-R2.fastq>
 
 ```
 
