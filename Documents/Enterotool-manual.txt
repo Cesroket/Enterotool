@@ -43,12 +43,12 @@ Example:
 --------
 ./enterotool.sh Sample1 /path/to/sample_R1.fastq /path/to/sample_R2.fastq /path/to/database.fasta
 
-This will create the output directory 'Enterotool-Sample1' containing the processed results.
+An output directory named 'Enterotool-Sample1' which contained  the processed results will be created.
 
-Notes:
+Recomendations:
 ------
 - Ensure the database is formatted using 'makeblastdb' before running the script.
-- Use the provided installer script to set up the required dependencies, or just make sure you have all of them install corectly. 
+- Use the provided installer script to set up the required dependencies, or just make sure you have all of them installed corectly. 
 - The script automatically normalizes the abundance data to CPM and generates a genus-level bar chart, but you can choose to use it or not. 
 
 # Developed by: Cesroket, César Adrián Barbuzana Armas.
